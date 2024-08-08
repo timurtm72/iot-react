@@ -1,0 +1,34 @@
+/*!* AppBarStyle.css *!*/
+/*.app-bar {*/
+/*    background-color: royalblue; !* Цвет фона *!*/
+/*    color: white; !* Цвет текста *!*/
+/*    padding: 10px 20px; !* Отступы *!*/
+/*    display: flex;*/
+/*    justify-content: space-between; !* Располагает элементы по краям *!*/
+/*    align-items: center; !* Центрирует элементы по вертикали *!*/
+/*}*/
+
+.app-bar {
+    background-color: royalblue; /* Цвет фона */
+    color: white; /* Цвет текста */
+    padding: 10px 20px; /* Отступы */
+    display: flex;
+    justify-content: space-between; /* Располагает элементы по краям */
+    align-items: center; /* Центрирует элементы по вертикали */
+    position: fixed; /* Фиксирует AppBar */
+    top: 0; /* Привязывает к верхней части экрана */
+    left: 0; /* Привязывает к левой части экрана */
+    width: 100%; /* Ширина AppBar на весь экран */
+    z-index: 1000; /* Устанавливает приоритет отображения, чтобы AppBar был поверх других элементов */
+}
+
+
+.app-bar-left-text {
+    font-size: 24px; /* Размер текста */
+    font-weight: bold; /* Жирный текст */
+}
+
+.app-bar-right-text {
+    font-size: 18px; /* Размер текста для правого текста */
+    margin-right: 30px;
+}

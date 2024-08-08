@@ -1,0 +1,196 @@
+/*.read-all-devices-container {*/
+/*    !*max-width: 600px;*!*/
+/*    !*margin: 20px;*!*/
+/*    !*padding: 20px;*!*/
+/*    !*border-radius: 8px;*!*/
+/*    !*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*!*/
+/*    !*background-color: #fff;*!*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    !*!*position: relative;*!*!*/
+/*    justify-content: center; !* Центрирование по вертикали *!*/
+/*    align-items: center; !* Центрирование по горизонтали *!*/
+/*}*/
+.read-all-devices-container {
+    max-width: 800px; /* Ограничение ширины контейнера */
+    margin: 20px; /* Центрирование контейнера по горизонтали */
+    padding: 20px; /* Отступы внутри контейнера */
+    border-radius: 8px; /* Скругление углов */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень вокруг контейнера */
+    background-color: #fff; /* Цвет фона */
+    display: flex; /* Используем Flexbox для расположения содержимого */
+    flex-direction: column; /* Располагаем содержимое вертикально */
+    position: relative; /* Позиционирование контейнера относительно его нормального потока */
+    justify-content: center; /* Центрирование содержимого по вертикали */
+    align-items: center; /* Центрирование содержимого по горизонтали */
+    max-height: 80vh; /* Максимальная высота контейнера (80% от высоты окна) */
+    overflow-y: auto; /* Включаем вертикальную прокрутку, если содержимое превышает высоту */
+}
+
+.form-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.button-primary {
+    background-color: #4caf50;
+    color: #fff;
+}
+.button-started{
+    background-color: #4caf50;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+}
+.button-primary:hover {
+    background-color: #45a049;
+}
+
+.loading-indicator {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.error {
+    color: #f44336;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.devices-list {
+    margin: 20px;
+    max-height: 65vh;
+}
+
+.device-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.led-values {
+    margin-top: 10px;
+}
+
+.led-item {
+    padding: 5px;
+    border: 5px solid #eee;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+.button-group {
+    display: flex;
+    justify-content: center; /* Центрируем кнопки по горизонтали */
+    gap: 20px; /* Отступ между кнопками */
+    width: 100%; /* Ширина группы кнопок */
+}
+
+/* Стиль кнопок */
+.button {
+    padding: 10px;
+    border: none;
+    border-radius: 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Плавный переход только для цвета фона */
+}
+
+
+/* Стиль для основной кнопки */
+.button-primary {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.button-primary:hover {
+    background-color: #45a049;
+}
+
+.button-primary:active {
+    background-color: #388e3c;
+}
+
+/* Стиль для кнопки очистки полей */
+.button-secondary {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.button-secondary:hover {
+    background-color: #e53935;
+}
+
+.button-secondary:active {
+    background-color: #c62828;
+}
+
+.button-started:hover {
+    background-color: #45a049;
+}
+
+.button-started:active {
+    background-color: #388e3c;
+}
+.fetch-button-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: auto;
+}
+.name-style {
+    color: green;
+    font-size: 24px;
+}
+.id-style {
+    color: red;
+    font-size: 24px;
+}
+.field-style {
+    color:blue;
+    font-size: 22px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.modal-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: royalblue;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
